@@ -5,7 +5,13 @@ const path = require("path");
 const app = express();
 const jsonParser = express.json();
 
-const url = "mongodb://localhost:27017/";
+const {
+    MONGO_DB_HOSTNAME,
+    MONGO_DB_PORT,
+    MONGO_DB
+} = process.env
+
+const url = `mongodb://${MONGO_DB_HOSTNAME}:${MONGO_DB_PORT}/${MONGO_DB}`;
 const dbName = "carsdb";
 const collectionName = "cars";
 

@@ -2,7 +2,8 @@
   "dependencies": {
     "express": "^4.19.2",
     "mongodb": "^6.7.0",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "dotenv": "^8.2.0"
   },
   "name": "lab5docker",
   "version": "1.0.0",
